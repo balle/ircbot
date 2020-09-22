@@ -1,0 +1,111 @@
+<!--
+  IRC bot general configuration file
+  Programmed by Bastian Ballmann
+-->
+
+<config>
+  <!-- Speech database -->
+  <speech>speech.xml</speech>
+
+  <!-- IRC server and channel to connect to -->
+  <irc>
+    <server>irc.chaostal.de</server>
+    <port>6667</port>
+    <channel>#test</channel>
+  </irc>
+
+  <!-- Bot identification -->
+  <ident>
+    <nicks>
+      <item>Bastard</item>
+      <item>Pussy</item>
+      <item>Hijacker</item>
+    </nicks>
+    <name>Little bastard</name>
+    <user>basti</user>
+  </ident>
+
+  <!-- Special users -->
+  <users>
+    <!-- Root user and password -->
+    <root>
+      <nick>balle</nick>
+      <password>thatstheplain</password>
+    </root>
+  
+    <!-- Obey user -->
+    <obey>maiky</obey>
+
+    <!-- Masters (people to give ops) -->
+    <masters>
+      <balle>
+        <host>citykom.de</host>
+	<host>crazydj.de</host>
+      </balle>
+      <marcel>
+        <host>195.71.51.99</host>
+        <host>idefix.wiminno.com</host>
+      </marcel>
+      <maiky>
+        <host>mediaWays.net</host>
+      </maiky>
+      <kahless>
+        <host>dip.t-dialin.net</host>
+        <host>idefix.wiminno.com</host>
+      </kahless>
+    </masters>
+
+    <!-- Fun nicks -->
+    <fun>
+      <maiky/>
+      <balle/>
+      <kahless/>
+    </fun>
+  </users>
+
+  <!-- Welcome messages -->
+  <welcome>
+    <kahless>
+      <msg>grossmeister kahless! *verbeug*</msg>
+      <msg>hi kahless! muhahaha *sabber_hochzieh*</msg>
+      <msg>oha! der quaker is wieder unter uns! *wumme_auspack*</msg>
+      <msg>ach der kahless kuck an! :P</msg>
+    </kahless>
+    <maiky>
+      <msg>maiky! :) *kiss* *knuddel*</msg>
+      <msg>kleine hackse auf 12 uhr! *matsch* :)</msg>
+      <msg>die nubische prinzessin! *kuschel*</msg>
+      <msg>oha! weiblicher besuch! benehmt euch maenner! ;)</msg>
+    </maiky>
+    <balle>
+      <msg>master balle, der bekloppte! *verbeug*</msg>
+      <msg>der balle schon wieder... @@</msg>
+      <msg>oha! vorsicht chef! muhahaha</msg>
+      <msg>balle! benimm dich!</msg>
+      <msg>vorsicht! verrueckter dj am start! &amp;lt;scratch&amp;gt;</msg>
+    </balle>
+  </welcome>
+
+  <!-- Bad words which should be counted -->
+  <badwords>
+    <arsch>0</arsch>
+    <wichse>0</wichse>
+    <damn>0</damn>
+    <mist>0</mist>
+    <fuck>0</fuck>
+    <fick>0</fick>
+    <lamer>0</lamer>
+    <weichei>0</weichei>
+    <pisse>0</pisse>
+    <hure>0</hure>
+    <motherfucker>0</motherfucker>
+    <scheiss>0</scheiss>
+    <penner>0</penner>
+    <sau>0</sau>
+    <schwein>0</schwein>
+    <doof>0</doof>
+    <dohf>0</dohf>
+    <bloed>0</bloed>
+    <idiot>0</idiot>
+  </badwords>
+</config>

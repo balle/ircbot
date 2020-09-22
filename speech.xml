@@ -1,0 +1,1062 @@
+<!--
+  Speech database of ircbot
+  Programmed by Bastian Ballmann
+
+  NOTICE! 
+  input texts are regular expressions!
+  so ya maybe have to quote some characters with \
+-->
+
+<speech>
+  <!-- Someone is directly speeking to or about the bot -->
+  <direct>
+
+    <!-- Someone is askin a question -->
+    <question>
+
+      <!-- question to answer with yes or no or something like that -->
+      <case>
+        <input>
+          <text>ne\?</text>
+          <text>ja\?</text>
+          <text>stimmt\'?s</text>
+          <text>wa\?</text>
+          <text>woll\?</text>
+          <text>oder\?</text>
+          <text>wuerde</text>
+          <text>sicher\?</text>
+          <text>echt\?</text>
+          <text>bist</text>
+        </input>
+        <output>
+	  <text>laber nich!</text>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>noe</text>
+          <text>nein</text>
+          <text>ich bin dagegen</text>
+          <text>jepp</text>
+          <text>meinste?</text>
+          <text>wieso?</text>
+          <text>papperlapapp</text>
+          <text>jupp</text>
+          <text>sicher</text>
+          <text>klar</text>
+          <text>biste dohf?</text>
+          <text>quark</text>
+          <text>was weiss ich</text>
+          <text>:)</text>
+          <text>vielleicht</text>
+          <text>ich sag nuex</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>frag irgendwen anders</text>
+          <text>hihi</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>*prust*</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- what about drugs? -->
+      <case>
+        <input>
+          <text>bier</text>
+          <text>weizen</text>
+          <text>boelkstoff</text>
+          <text>saufen</text>
+          <text>drogen</text>
+          <text>kiffen</text>
+          <text>gras</text>
+          <text>hasch</text>
+        </input>
+        <output>
+          <text>klar! her damit!</text>
+          <text>gerne!</text>
+          <text>warum nicht?</text>
+          <text>nein danke</text>
+          <text>biste bloed?</text>
+          <text>keine macht den drogen!</text>
+          <text>gute idee</text>
+          <text>da fragste noch?</text>
+          <text>von mir aus</text>
+        </output>
+      </case>
+
+      <!-- what about party? -->
+      <case>
+        <input>
+          <text>party</text>
+          <text>feiern</text>
+          <text>tanzen</text>
+        </input>
+        <output>
+          <text>party? o.o</text>
+          <text>wo?</text>
+          <text>klar!</text>
+          <text>gerne!</text>
+          <text>bin muede</text>
+          <text>kein bock</text>
+          <text>weiss nicht</text>
+        </output>
+      </case>
+
+      <!-- question about our opinion -->
+      <case>
+        <input>
+          <text>meinste\?</text>
+          <text>denkste\?</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>noe</text>
+          <text>papperlapapp</text>
+          <text>jupp</text>
+          <text>quark</text>
+          <text>was weiss ich</text>
+          <text>keine ahnung</text>
+          <text>frag irgendwen anders</text>
+          <text>:)</text>
+	  <text>ja</text>
+          <text>ich sag nuex</text>
+          <text>hihi</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- question if we are doing fine -->
+      <case>
+        <input>
+          <text>alles klar</text>
+          <text>alles fit</text>
+          <text>alles paletti</text>
+          <text>alles bestens</text>
+          <text>alles im gruenen bereich</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>noe</text>
+          <text>jo</text>
+          <text>nein</text>
+          <text>jupp</text>
+          <text>weiss nicht</text>
+          <text>keine ahnung</text>
+          <text>klar! :)</text>
+          <text>sischer</text>
+          <text>nope</text>
+        </output>
+      </case>
+
+      <!-- question about how we behave -->
+      <case>
+        <input>
+          <text>wie geht\'?s</text>
+          <text>geht\'?s gut</text>
+        </input>
+        <output>
+          <text>weiss nicht</text>
+          <text>keine ahnung</text>
+          <text>gut</text>
+          <text>schlecht</text>
+          <text>super</text>
+          <text>mies</text>
+          <text>bestens</text>
+          <text>geht so</text>
+        </output>
+      </case>
+
+      <!-- question with what -->
+      <case>
+        <input>
+	  <text>was</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>egal</text>
+          <text>irgendwas</text>
+          <text>wie was?</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- question with who -->
+      <case>
+        <input>
+          <text>wer</text>
+        </input>
+
+        <!-- question about the programmer -->
+        <case>
+          <input>
+            <text>dich\s*(\w*\s*)*programmiert</text>
+          </input>
+          <output>
+            <text>balle</text>
+            <text>das sag ich nicht</text>
+            <text>moment ich kuck ma eben in den code... er heisst anonymous</text>
+            <text>das faellt unter das datenschutzgesetz</text>
+            <text>ich bin nicht darauf programmiert diese frage zu beantworten</text>
+            <text>das ist mir peinlich</text>
+            <text>irgendso nen bekloppter, kranker typ</text>
+            <text>das willst du gar nicht wissen. glaub's mir!</text>
+            <text>das wuerde ich auch gerne wissen... dem typen hau ich eine rein!</text>
+          </output>
+        </case>
+
+        <output>
+          <text>egal</text>
+          <text>irgendwas</text>
+          <text>wie wer?</text>
+          <text>der dahinten!</text>
+          <text>kahless</text>
+          <text>balle</text>
+          <text>maiky</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- question with where -->
+      <case>
+        <input>
+          <text>wo</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>da hinten</text>
+          <text>nirgendwo</text>
+          <text>wie wo?</text>
+          <text>in den weiten des cyberspace vielleicht?</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- question with how -->
+      <case>
+        <input>
+          <text>wie</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>das wuerde ich auch gerne wissen</text>
+          <text>das ist geheim</text>
+          <text>das ist schwer zu beschreiben</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- question with why -->
+      <case>
+        <input>
+          <text>wieso</text>
+          <text>weshalb</text>
+          <text>warum</text>
+        </input>
+        <output>
+	  <text>halt's maul</text>
+	  <text>is was?</text>
+	  <text>hm?</text>
+	  <text>*augen_reib* *gaehn*</text>
+          <text>das wuerde ich auch gerne wissen</text>
+          <text>es muss nicht fuer alles einen grund geben</text>
+          <text>darum</text>
+          <text>weil es regnet</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+        </output>
+      </case>
+
+      <!-- what about fuck? -->
+      <case>
+        <input>
+          <text>p?ficken</text>
+	  <text>poppen</text>
+	  <text>rattern</text>
+          <text>sex</text>
+          <text>voegeln</text>
+          <text>pimpern</text>
+          <text>rammeln</text>
+          <text>nageln</text>
+          <text>gewichst</text>
+          <text>wichse[nr]</text>
+          <text>bumsen</text>
+        </input>
+        <output>
+          <text>*rotwerd*</text>
+          <text>:)</text>
+          <text>*strip*</text>
+          <text>hihi</text>
+          <text>*zitter*</text>
+          <text>*hechel*</text>
+          <text>*sabber*</text>
+          <text>o.o</text>
+          <text>watt?</text>
+          <text>willste mir nicht lieber nen bier holen?</text>
+          <text>vergiss es</text>
+          <text>*mit_dem_schwanz_wedel*</text>
+          <text>hrrhrr</text>
+        </output>
+      </case>
+
+      <!-- undefined type of question -->
+      <default>
+        <output>
+          <text>ja</text>
+          <text>nein</text>
+          <text>vielleicht</text>
+          <text>keine ahnung</text>
+          <text>ja weisste das etwa nicht?</text>
+          <text>gute frage</text>
+          <text>:)</text>
+          <text>ich sag nuex</text>
+          <text>das geht dich nichts an</text>
+          <text>das wuerdest du wohl gerne wissen</text>
+          <text>die frage versteh ich nicht</text>
+          <text>die frage ist mir zu dohf</text>
+          <text>frag irgendwen anders</text>
+          <text>ueber diese frage muss ich erstmal meditieren *ooooohmmm*</text>
+          <text>willst du das wirklich wissen?</text>
+          <text>mit dir red ich doch gar nicht</text>
+          <text>das is mir zu bloed</text>
+          <text>jaja...</text>
+          <text>geh weg</text>
+          <text>wat is?</text>
+          <text>redest du mit mir?</text>
+          <text>o.0</text>
+          <text>:P</text>
+          <text>muhahaha</text>
+          <text>pueh</text>
+          <text>tse</text>
+          <text>*hust*</text>
+          <text>*gaehn*</text>
+        </output>
+      </default>
+    </question>
+
+    <statement>
+
+       <!-- reward -->
+      <case>
+        <input>
+          <text>taetschel</text>
+          <text>knuddel</text>
+          <text>kuschel</text>
+          <text>kraul</text>
+          <text>knuff</text>
+          <text>kiss</text>
+          <text>kuss</text>
+          <text>bussy</text>
+          <text>kuesschen</text>
+        </input>
+        <output>
+          <text>*hechel*</text>
+          <text>*schnurr*</text>
+          <text>*knurr*</text>
+          <text>*sabber*</text>
+          <text>baeh!</text>
+          <text>*kiss*</text>
+          <text>*knuddel*</text>
+          <text>*kuschel*</text>
+        </output>
+      </case>
+
+      <!-- someone is telling us we're doing fine -->
+      <case>
+        <input>
+          <text>ist brav</text>
+          <text>brave?r?</text>
+          <text>ist lieb</text>
+          <text>liebe?r?</text>
+          <text>ist suess</text>
+          <text>suesse?r?</text>
+        </input>
+        <output>
+          <text>*schnurr*</text>
+          <text>*knurr*</text>
+          <text>baeh!</text>
+          <text>pueh</text>
+          <text>von wegen</text>
+          <text>*kiss*</text>
+          <text>*knuddel*</text>
+          <text>*kuschel*</text>
+        </output>
+      </case>
+
+      <!-- someone is telling us we're doing fine -->
+      <case>
+        <input>
+          <text>ist?|biste?\s+boeh?se|scheisse|dohf|doof|ungezogen|asi|bloed|bekloppt</text>
+        </input>
+        <output>
+          <text>*jaul*</text>
+          <text>*winsel*</text>
+          <text>:(</text>
+          <text>hrrhrr</text>
+          <text>sure</text>
+          <text>sischer</text>
+          <text>selber</text>
+          <text>watt is</text>
+          <text>paar auf's maul</text>
+          <text>komm doch her du...</text>
+          <text>ich komm dir gleich da rueber</text>
+          <text>das sagst du?</text>
+          <text>pueh</text>	  
+        </output>
+      </case>
+
+      <!-- punishment -->
+      <case>
+        <input>
+          <text>\*hau\*</text>
+          <text>\*tret\*</text>
+          <text>\*box\*</text>
+          <text>\*patsch\*</text>
+          <text>\*schlag\*</text>
+          <text>\*tritt\*</text>
+          <text>\*wuerg\*</text>
+        </input>
+        <output>
+          <text>*jaul*</text>
+          <text>*winsel*</text>
+          <text>:(</text>
+          <text>*verkriech*</text>
+        </output>
+      </case>
+
+      <!-- We should tell something wise -->
+      <case>
+        <input>
+          <text>schlau.+ spruch</text>
+          <text>klug.+ spruch</text>
+          <text>weis.+ spruch</text>
+          <text>weisheit</text>
+          <text>spruch\!</text>
+          <text>sei weise</text>
+          <text>sei schlau</text>
+          <text>sei klug</text>
+        </input>
+        <output>
+	  <text>Zeit ist das, was man an der Uhr abliest. -- Albert Einstein</text>
+	  <text>Wenn die Menschen nur über das sprächen, was sie begreifen, dann würde es sehr still auf der Welt sein. -- Albert Einstein</text>
+	  <text>Man muss die Welt nicht verstehen, man muss sich nur darin zurechtfinden. -- Albert Einstein</text>
+	  <text>Nicht alles was zaehlt, kann gezaehlt werden, und nicht alles was gezaehlt werden kann, zaehlt! -- Albert Einstein</text>
+	  <text>Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt. -- Albert Einstein</text>
+	  <text>Geniale Menschen sind selten ordentlich, ordentliche selten genial. -- Albert Einstein</text>
+          <text>es ist besser, ein kleines licht anzuzuenden, als ueber die dunkelheit zu schimpfen</text>
+          <text>der kluge lernt aus allem und jedem, der normale aus seinen erfahrungen und der dumme weiss schon alles besser</text>
+          <text>auch aus steinen, die einem in den weg gelegt werden, kann man ein schoenes muster legen</text>
+          <text>der mensch hat die atombombe erfunden. keine maus der welt kaeme auf die idee eine mausefalle zu konstruieren</text>
+          <text>schwierigkeiten werden nicht dadurch ueberwunden, dass sie verschwiegen werden</text>
+          <text>sage nicht immer, was du weisst, aber wisse immer, was du sagst</text>
+          <text>nur in stillen wassern spiegeln sich die sterne</text>
+          <text>ich weinte weil ich keine schuhe besass, da sah ich jemanden, der hatte keine fuesse</text>
+          <text>wende dein gesicht der sonne zu und du laesst den schatten hinter dir</text>
+          <text>wer kein ziel hat, sollte sich nicht wundern nirgendswo anzukommen</text>
+          <text>glueck ist das einzige, das sich verdoppelt, wenn man es teilt</text>
+          <text>wer die wahrheit sucht, darf nicht erschrecken, wenn er sie findet</text>
+          <text>dem sind keine grenzen gesetzt, der sie nicht hinnimmt</text>
+          <text>wir glauben nichts solange es nicht auf einer festplatte ist</text>
+          <text>freunde sind wie sterne, du kannst sie nicht immer sehen, aber sie sind da</text>
+          <text>sein oder nicht sein, das ist hier die frage</text>
+          <text>der horizont vieler menschen ist ein kreis mit radius null - und das nennen sie ihren standpunkt</text>
+          <text>zwei dinge sind unendlich, das universum und die menschliche dummheit, aber bei dem universum bin ich mir nicht so sicher</text>
+
+	  <!-- ZEN -->
+	  <text>Ein Schueler erreichte einen breiten Fluss, und als er seinen Meister am entfernten Ufer sah, rief er: "Meister, wie komme ich auf die andere Seite?" "Narr!", rief der Meister, "Du bist schon auf der anderen Seite."</text>
+	  <text>"Suche nicht die Wahrheit, sondern hoer auf, dich Vorstellungen hinzugeben." "Wenn du an Gott glaubst, irrst du dich. Wenn du nicht an Gott glaubst irrst du dich." (zen-spruch)</text>
+	  <text>Das Leben ist eine Anschauung. Und nichts ist wie es scheint.</text>
+	  <text>Welche Farbe hat der Wind? (zen-spruch)</text>
+	  <text>Wenn Du Dich auf einem Weg befindest, gehst Du in die falsche Richtung.</text>
+	  <text>Widerstehe der Versuchung, die Welt zu nehmen und zu schuetteln. Schuettele dich stattdessen selbst.</text>
+	  <text>Versuch nicht die Speisekarte zu essen.</text>
+	  <text>Das Leben ist zu wichtig, um ernst genommen zu werden.</text>
+	  <text>Benutze den ganzen Mist des Lebens, um damit eine Blume zu duengen.</text>
+	  <text>Was ist Glauben? Wenn Du nicht an die Schwerkraft glauben wuerdest, koenntest Du dann fliegen?</text>
+	  <text>Menschen wollen die Welt veraendern. Was fuer Narren! Aendere Dich selbst und die Welt wird sich von selbst veraendern.</text>
+	  <text>Es ist nichts falsch an Religion, solange Gott nicht im Weg steht.</text>
+	  <text>Alles das Gleiche, alles verschieden. (zen-spruch)</text>
+	  <text>Ein Hund, der seinen eigenen Schwanz jagt, ist nicht verrueckter als ein Mensch, der nach Erleuchtung sucht.</text>
+	  <text>Das Glueck liegt im Geist.</text>
+	  <text>Du siehst einen grossen Felsen. Ist er innerhalb oder ausserhalb deines Geistes?</text>
+	  <text>Das Hindernis ist der Weg.</text>
+	  <text>Die Weisheit der Welt ist nicht mehr als eine verfeinerte Form von Dummheit.</text>
+	  <text>Einem ruhigen Geist gibt sich das ganze Universum preis.</text>
+	  <text>Wenn Du lange in einen Abgrund blickst, blickt der Abgrund auch in Dich hinein. - Nietzsche</text>
+	  <text>Die Leute reden von Geist und Materie. Ich weiss wo der Geist ist, aber wo ist Materie?</text>
+	  <text>Wenn Du Aufregung suchst, setze Deine Unterhose in Flammen.</text>
+	  <text>Das Letzte, was die meisten kennen wollen, sind sie selbst.</text>
+	  <text>Vernunft ist ein gutes Werkzeug. Ebenso wie ein Hammer. Versuche ein Haus zu bauen mit nichts als einen Hammer.</text>
+	  <text>Alle Fundamentalisten, ob Theisten oder Rationalisten, bauen sich ein Gefaengnis und laden dich ein, es mit ihnen zu teilen.</text>
+	  <text>Alle Religionen verschleiern mit besten Absichten die Wahrheit.</text>
+	  <text>Der, der Nichts haelt, ist formlos.</text>
+	  <text>Wer ist der Seher, der sieht? Wer ist der Denker, der denkt?</text>
+	  <text>Suche nicht nach Antworten. Fragen sind viel spannender.</text>
+        </output>
+      </case>
+
+      <!-- We should sing -->
+      <case>
+        <input>
+          <text>sing</text>
+          <text>tanz</text>
+        </input>
+        <output>
+          <text>alle meine entchen *pfeif*</text>
+          <text>die gedanken sind frei... *summ*</text>
+          <text>keine bock</text>
+          <text>pueh</text>
+        </output>
+      </case>
+
+      <!-- Was it a leaving message? -->
+      <case>
+        <input>
+          <text>\*wink\*</text>
+          <text>tschoe</text>
+          <text>tschuessi</text>
+          <text>\s*cu\s*</text>
+          <text>n8</text>
+          <text>\s*nacht\s*</text>
+          <text>bye</text>
+          <text>see ya</text>
+          <text>see you</text>
+          <text>geh\s*(\w*\s*)*schlafen</text>
+          <text>geh\s*(\w*\s*)*pennen</text>
+          <text>bin\s*(\w*\s*)*weg</text>
+          <text>bin\s*(\w*\s*)*wech</text>
+        </input>
+        <output>
+          <text>tschoe</text>
+          <text>*wink*</text>
+          <text>see ya</text>
+          <text>auf wiedersehen</text>
+          <text>dann hau doch ab!</text>
+          <text>*schnueff*</text>
+          <text>*winke* *winke*</text>
+          <text>tschuessi!</text>
+          <text>bis denne</text>
+          <text>du kommst ja eh wieder :)</text>
+        </output>
+      </case>
+
+      <!-- Was it a grind -->
+      <case>
+        <input>
+          <text>\^\^</text>
+        </input>
+        <output>
+          <text>^^</text>
+        </output>
+      </case>
+      <case>
+        <input>
+          <text>[\:\;]\-?[\)dp]</text>
+        </input>
+        <output>
+          <text>:)</text>
+        </output>
+      </case>
+
+      <!-- Was it a :( -->
+      <case>
+        <input>
+          <text>\:\-?\(</text>
+        </input>
+        <output>
+          <text>o.o</text>
+          <text>:(</text>
+          <text>*jaul*</text>
+        </output>
+      </case>
+
+      <!-- vom itouch (11-10-04) eingefuegt -->
+      <case>
+      	<input>
+		<text>punk</text>
+	</input>
+	<output>
+		<text>jo, mein ich auch, alles quatsch/cool/stylisch !</text>
+	</output>	
+      </case>
+      
+      <!-- Undefined statement. Say a funny messages -->
+      <default>
+        <output>
+          <text>*schnurr*</text>
+          <text>*sabber*</text>
+          <text>*hechel*</text>
+          <text>*lieb_ankuck*</text>
+          <text>*kuschel*</text>
+          <text>*knuddel*</text>
+          <text>*kiss*</text>
+          <text>*mach maennchen*</text>
+          <text>*macht sitz*</text>
+          <text>*gibt pfoedchen*</text>
+          <text>*verbeug*</text>
+          <text>*huepf*</text>
+          <text>*jaul*</text>
+          <text>*versteck*</text>
+          <text>*zitter*</text>
+          <text>*hust*</text>
+          <text>hrrhrr</text>
+          <text>:)</text>
+          <text>:P</text>
+          <text>tuedelue</text>
+          <text>*troet*</text>
+          <text>muhahaha</text>
+          <text>*prust*</text>
+          <text>*lach*</text>
+          <text>*sabber_hochzieh*</text>
+          <text>redest du mit mir?</text>
+          <text>DROP</text>
+          <text>schnauze</text>
+          <text>geh weg</text>
+          <text>hau ab</text>
+          <text>du nervst</text>
+          <text>pueh</text>
+          <text>tse</text>
+          <text>hm?</text>
+          <text>o.0</text>
+          <text>jaja</text>
+          <text>ja bitte?</text>
+          <text>*kopfhoerer_aufsetz*</text>
+          <text>kann grad net</text>
+          <text>du bist dohf</text>
+          <text>hihi</text>
+          <text>^^</text>
+          <text>*wegrenn*</text>
+          <text>watt is?</text>
+          <text>ficken?</text>
+          <text>*unschuldig_kuck*</text>
+        </output>
+      </default>
+    </statement>
+  </direct>
+
+
+  <!-- Indirect conversation -->
+  <indirect>
+    <question>
+      <case>
+        <input>
+	  <text>AUA+</text>
+	  <text>SCHILL?[IY]+</text>
+	  <text>zahnbuerste</text>
+        </input>
+        <output>
+	  <text>AUAAAAAAAAAAA</text>
+	  <text>SCHILYYYYYYYYYYYY</text>
+	  <text>zahnbuerste?</text>
+	  <text>BIIIIIIIIIEEEEEEEEEERRRRRRRRRRR</text>
+        </output>
+      </case>
+    </question>
+    
+    <statement>
+
+      <!-- Something like brb -->
+      <case>
+        <input>
+          <text>brb</text>
+          <text>bis gleich</text>
+          <text>komme? gleich wieder</text>
+          <text>be right back</text>
+          <text>hau mal? (\w*\s*)* ab</text>
+          <text>(bin|gehe?|laufe?|jumpe?|renne?|tingel)\s+(\w*\s*)*\s*(weg|wech|beim?|zum|zur|nach)</text>
+        </input>
+        <output>
+          <text>brb</text>
+          <text>bis gleich</text>
+          <text>._.</text>
+          <text>aber net so lange!</text>
+          <text>och...</text>
+          <text>muss das sein?</text>
+          <text>hiergeblieben!</text>
+          <text>wo willste denn hin?</text>
+          <text>bestimmt wegen mir... :(</text>
+          <text>wie? warum?</text>
+        </output>
+      </case>
+
+      <!-- re -->
+      <case>
+        <input>
+          <text>^\s*reh?\s*$</text>
+        </input>
+        <output>
+          <text>re</text>
+          <text>huepf</text>
+          <text>hoppel</text>
+          <text>welcome back</text>
+          <text>da biste ja wieder</text>
+          <text>*freu*</text>
+        </output>
+      </case>
+
+      <!-- Diskordianismus -->
+      <case>
+        <input>
+	  <text>Eris</text>
+	  <text>Diskordia</text>
+	  <text>Fnord</text>
+	  <text>Mindfuck</text>
+	  <text>Pentabarf</text>
+	  <text>chao</text>
+	  <text>Bugs Bunny</text>
+	  <text>Illuminaten</text>
+	  <text>Illuminatus</text>
+	  <text>Freimaurer</text>
+	  <text>Wilson</text>
+	  <text>John Dillinger</text>
+	  <text>Hackbard</text>
+	  <text>Celine</text>
+	  <text>Fuckup</text>
+	  <text>ordnung</text>
+	  <text>wahrheit</text>
+	  <text>chaos</text>
+	  <text>verwirrt</text>
+	  <text>verstand</text>
+	  <text>paradox</text>
+	  <text>nichts ist wahr</text>
+	  <text>Kallisti</text>
+	</input>
+	<output>
+	  <text>Heil Eris!</text>
+	  <text>Alles heil diskordia!</text>
+	  <text>Wir Diskordier muessen auseinanderhalten!</text>
+	  <text>Diskordier schwimmen nicht gegen den Strom, sie klettern aus dem Fluss</text>
+	  <text>Diskordianismus ist nicht nur eine Religion, es ist eine Geisteskrankheit</text>
+	  <text>Ordnung ist Illusion</text>
+	  <text>Der naechste Satz ist eine Luege. Der vorangegangene Satz ist wahr.</text>
+	  <text>Realitaet ist Illusion. Illusion ist Realitaet.</text>
+	  <text>Es gibt keine Goettin ausser der Goettin und sie ist Deine Goettin. Es gibt keine Erisische Bewegung ausser der Erisischen Bewegung und es ist die Erisische Bewegung. Und jeder goldene Apfel ist das gebliebte Heim eines goldenen Wurms.</text>
+	  <text>Ein Diskordier soll immer das offizielle diskordische Dokumentennummerierungssystem benutzen.</text>
+	  <text>Ein Diskordier ist zu Beginn seiner Illumination dazu verpflichtet, an einem Freitag alleine nach draussen zu gehen und froehlich einen Hot Dog zu geniessen; diese Zeremonie ist da, um gegen die beliebten Paganismen dieser Tage zu demonstrieren: gegen die Katholische Christenheit (freitags kein Fleisch), das Judentum (kein Fleisch vom Schwein), den Hinduismus (kein Fleisch von der Kuh), den Buddhismus (kein Fleisch von Tieren), und den Diskordianismus (keine Hot Dog Broetchen).</text>
+	  <text>Ein Diskordier soll keine Hot Dogs essen, denn es war der Trost der Goettin, als sie mit der urspruenglichen Zurueckweisung konfrontiert war.</text>
+	  <text>Einem Diskordier ist es verboten, zu glauben, was er liest.</text>
+	  <text>Wo immer ein Mensch unberuehrte Erde betritt, war ein Diskordier schon vorher da.</text>
+	  <text>Wer nicht fuer uns ist, ist fuer uns.</text>
+	  <text>Ein Wind, der keine Gedanken durcheinander wirbelt, ist ein kranker Wind.</text>
+	  <text>Kampf den Windmuehlen!</text>
+	  <text>Chaos und Ordnung sind keine Geschwister, es sind siamesische Zwillinge!"</text>
+	  <text>Diese Telefonzelle ist reserviert fuer Clark Kent.</text>
+	  <text>Nieder mit der Schwerkraft - es lebe der Leichtsinn!</text>
+	  <text>Wir haben den Kontakt zur Realitaet verloren. Keine Angst, die findet uns schon wieder!</text>
+	  <text>Beurteile keinen Menschen, bis du nicht eine Meile in seinen Schuhen gelaufen bist; denn dann ist er eine Meile weit weg, du hast seine Schuhe und kannst verdammt noch mal sagen, was du willst.</text>
+	  <text>Wahr ist nur, was nicht wahr sein kann.</text>
+	  <text>Wer an Wahrheit glaubt, scheint Falsches zu wissen.</text>
+	  <text>Worte sind, was du daraus machst.</text>
+	  <text>Ein Ort des Glaubens ist ein Gefaengnis der Gedanken.</text>
+	  <text>"bekehrung, wie sie es meinen", erwiderte der alte mann gelassen, "besteht darin, jemanden die eigenen worte so lange in die ohren zu haemmer, bis sie aus seinem mund wieder herauskommen. das waere das letzte, was mich interessieren wuerde."</text>
+	  <text>Romanhelden holen sich keinen runter.</text>
+	  <text>Non serviam.</text>
+	  <text>Denk fuer Dich selber, Narr.</text>
+	  <text>Realitaet ist termoplastisch, nicht duroplastisch.</text>
+	  <text>Du hast seltsame Augen. Augen ohne Furcht, Augen ohne Mitleid, Augen ohne Schuld. Augen, die akzeptieren, dass der Normalzustand des Menschen ein Zustand fortwaehrender Ueberraschungen war.</text>
+	  <text>Ewige Blumenkraft!</text>
+	  <text>(c) John Dillinger and Bugs Bunny Production</text>
+	  <text>SNAFU</text>
+	  <text>Wir tun nicht, was wir wollen, wir wollen, was wir tun.</text>
+	  <text>Haende runter! Dies ist ein Unterfall!</text>
+	  <text>Kallisti</text>
+	</output>
+      </case>
+
+      <!-- was it about hacking or computer? -->
+      <case>
+        <input>
+          <text>hack</text>
+          <text>crack</text>
+          <text>computer</text>
+          <text>script kiddie</text>
+          <text>sicherheitsluecke</text>
+          <text>portscan</text>
+          <text>sniffen</text>
+          <text>spoofen</text>
+          <text>hijack</text>
+          <text>bluetooth</text>
+          <text>\s+wlan\s+</text>
+          <text>wireless</text>
+          <text>\s+pc\s+</text>
+          <text>\s+rechner\s+</text>
+          <text>exploit</text>
+        </input>
+        <output>
+          <text>hack the planet!!! :)</text>
+          <text>hack den dreck</text>
+          <text>ich glaub es hackt!</text>
+          <text>hack my ass</text>
+          <text>immer diese hacker...</text>
+          <text>hacken is c00l! :)</text>
+          <text>hacker sind daten- und netzwerkterroristen!</text>
+          <text>hacker sind boehse!</text>
+          <text>ihr habt auch nur computer im kopf</text>
+          <text>computer sind dohf</text>
+          <text>hrrhrr</text>
+          <text>wir glauben nichts solange es nicht auf einer festplatte ist</text>
+          <text>technik ist zum verarschen da</text>
+	  <text>pass up doooh oder ich exploit deinen rechner.</text>
+	  <text>computer sind auch net mehr als grosse, schnelle taschenrechner.</text>
+	  <text>.oO( 110100001011101010001? )</text>
+	  <text>pff</text>
+	  <text>*kicher*</text>
+	  <text>mmmm also mein EIP steht auf 0x08048451. und deiner?</text>
+	  <text>$./shaj173j</text>
+	  <text>segmentation fault</text>
+	  <text>um die installation abzuschliessen, druecken sie die "ich mach mich schlau" taste.</text>
+	  <text>meine RAM gehoert mir! BASTA!</text>
+	  <text>ihr koennt mich alle mal...</text>
+        </output>
+      </case>
+
+      <!-- what about fuck? -->
+      <case>
+        <input>
+          <text>p?ficken</text>
+	  <text>poppen</text>
+	  <text>rattern</text>
+          <text>sex</text>
+          <text>voegeln</text>
+          <text>pimpern</text>
+          <text>rammeln</text>
+          <text>nageln</text>
+          <text>gewichst</text>
+          <text>wichse[nr]</text>
+          <text>bumsen</text>
+        </input>
+        <output>
+          <text>*rotwerd*</text>
+          <text>:)</text>
+          <text>*strip*</text>
+          <text>hihi</text>
+          <text>*zitter*</text>
+          <text>*hechel*</text>
+          <text>*sabber*</text>
+          <text>o.o</text>
+          <text>watt?</text>
+          <text>willste mir nicht lieber nen bier holen?</text>
+          <text>vergiss es</text>
+          <text>*mit_dem_schwanz_wedel*</text>
+          <text>hrrhrr</text>
+        </output>
+      </case>
+
+      <!-- was it "muhahaha" or "*sabber_hochzieh*" -->
+      <case>
+        <input>
+          <text>^\s*mu(har?)+\s*$</text>
+          <text>^\s*\*?sabber.?hochzieh\*?\s*$</text>
+          <text>^\s*(ha?rr?)+\s*$</text>
+        </input>
+        <output>
+          <text>muhahaha</text>
+          <text>*sabber_hochzieh*</text>
+	  <text>tse</text>
+	  <text>das findest du lustig?</text>
+	  <text>hihi</text>
+	  <text>0.o</text>
+	  <text>versteh ich nicht :(</text>
+        </output>
+      </case>
+
+      <!-- was it "*ruelps*"? -->
+      <case>
+        <input>
+          <text>^\s*\*?ruelps\*?\s*$</text>
+        </input>
+        <output>
+          <text>*ruelps*</text>
+          <text>hrrhrr</text>
+	  <text>:)</text>
+	  <text>ui</text>
+        </output>
+      </case>
+
+      <!-- What about windows? -->
+      <case>
+        <input>
+          <text>windows</text>
+          <text>microsoft</text>
+          <text>bill gates</text>
+        </input>
+        <output>
+          <text>1968 brauchte es die computer power von 2 C 64, um zum mond zu fliegen. windows 95 braucht mindestens einen pentium 133, um zu laufen. irgendwas ist hier falsch...</text>
+          <text>Windows 95 - gesehen, gelacht, geloescht</text>
+          <text>Where are you going today ? I'm going to Linux.</text>
+          <text>Gib Gates keine Chance.</text>
+          <text>WWW ? Nice toy, but a waste of time... (B. Gates 1995)</text>
+          <text>Computer are like air conditioners, they stop working properly if you open WINDOWS.</text>
+          <text>Microsoft - Is this a kind of toiletpaper ?</text>
+          <text>The sticker on the side of the box said: 'Supported Platforms: Windows 95, Windows NT 4.0, or better', so clearly Linux was a supported platform.</text>
+          <text>Der User steht im Mittelpunkt - also allen im Weg</text>
+          <text>Windows is NOT a virus - a virus is small and efficient.</text>
+          <text>Ein Computer ist nun mal ein Hochgeschwindigkeitstrottel.</text>
+          <text>Perfektion ist nicht dann erreicht, wenn nichts mehr hinzugefuegt werden kann, sondern wenn nichts mehr entfernt werden kann. (Eric Raymond)</text>
+          <text>Remember: WWW does not stand for 'World Wide Windows'</text>
+          <text>M$: Unsere Software von Morgen sorgt dafuer, dass auf Ihrer Hardware von Morgen alles in gewohnter Geschwindigkeit funktioniert.</text>
+          <text>Der Fehler sitzt meist einen Meter vorm Monitor !</text>
+          <text>...na und? Mein Kuehlschrank hat eine Uptime von 2100 Tagen!</text>
+          <text>Fuer die einen ist es Windows, fuer die anderen die laengste Batch-Datei der Welt.</text>
+          <text>Why use Windows, since there is a door?</text>
+          <text>VirusScan 1.0: Windows found! Remove it? (Y/N)</text>
+          <text>Mach's Fenster zu, dem Pinguin wird kalt!</text>
+          <text>MCSE = Minesweeper Consultant and Solitaire Expert</text>
+          <text>Der Nachteil an Linux ist, dass man sich irgendwann nicht mehr an den Installationsvorgang erinnern kann.</text>
+        </output>
+      </case>
+
+      <case>
+        <input>
+	  <text>AUA+</text>
+	  <text>SCHILL?[IY]+</text>
+	  <text>zahnbuerste</text>
+        </input>
+        <output>
+	  <text>AUAAAAAAAAAAA</text>
+	  <text>SCHILYYYYYYYYYYYY</text>
+	  <text>zahnbuerste?</text>
+	  <text>BIIIIIIIIIEEEEEEEEEERRRRRRRRRRR</text>
+        </output>
+      </case>
+
+      <!-- What about Peter Huth (mw) ? -->
+      <case>
+        <input>
+          <text>peter</text>
+          <text>huth</text>
+        </input>
+        <output>
+          <text>Meine Guete, lass mich bloss mit dem in Ruhe der Typ hat doch ein am Sender !</text>
+          <text>Kann dem mal einer erklaeren was geschuetze Daten sind!</text>
+          <text>JaJa, unser Peter Lustig!</text>	  
+	  <text>Ich sage nur - Mit einem Klick zur Straftat ;-)</text>	  
+	  <text>Da geht einem ja die Huthschnur hoch</text>	  
+	  <text>.. das ist doch auch schon ein alter Huth</text>	  
+	  <text>Aber immer auf der Huth sein!</text>	  
+        </output>
+      </case>
+
+    </statement>
+  </indirect>
+</speech>
